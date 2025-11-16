@@ -59,8 +59,45 @@ def exercise_5():
         print(last_name+" "+first_name)
 
 # --------------------------------------
+# Exercise 6: Write a Python program that accepts a sequence of 
+# comma-separated numbers from the user and generates a list and a tuple of those numbers.
+# --------------------------------------
+def exercise_6():
+    input_str = input("Give a sequence of numbers in format <NUM, NUM, ...>")
+    input_str_list = input_str.split(',')
+    input_list = [element.strip() for element in input_str_list]
+    input_tuple = tuple(input_list)
+    print(input_list)
+    print(input_tuple)
+
+# --------------------------------------
+# Exercise 7: Write a Python program that accepts a filename from the user and prints the 
+# extension of the file.
+# --------------------------------------
+def exercise_7():
+    filename = input("Give a filename:")
+    print("File extension: " +  filename.split('.')[-1])
+
+# --------------------------------------
+# Exercise 8: Write a Python program to display the first and last colors from 
+# the following list:
+# color_list = ["Red","Green","White" ,"Black"]
+# --------------------------------------
+def exercise_8():
+    color_list = ["Red","Green","White" ,"Black"]
+    print(color_list[0] +' '+ color_list[-1])
+
+# --------------------------------------
+# Exercise 9:Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+# exam_st_date = (11, 12, 2014)
+# --------------------------------------
+def exercise_9():
+    exam_st_date = (11, 12, 2014)
+    print("Sample output: The examination will start from: %i / %i / %i" % exam_st_date)
+
+# --------------------------------------
 # Testing Area
 # --------------------------------------
 if __name__ == "__main__":
     print("\nOutput of the Exercise:")
-    exercise_5()
+    exercise_9()
