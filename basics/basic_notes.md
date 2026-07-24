@@ -15,3 +15,6 @@ Lessions-learned after every session:
 2025.11.16:
 -check printing formatting (like in ex9)
 -try to run the code from the terminal and not with control+F5
+
+2026.07.24:
+-Sync with Lacko
