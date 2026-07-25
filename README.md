@@ -1,1 +1,1 @@
-Little fun together with the python brothers.
+Programming exercises with the python brothers.
