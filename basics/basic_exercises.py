@@ -95,9 +95,37 @@ def exercise_9():
     exam_st_date = (11, 12, 2014)
     print("Sample output: The examination will start from: %i / %i / %i" % exam_st_date)
 
+
+
+# --------------------------------------
+# slaccer-tech exercises
+
+# 15. Sphere Volume Calculator
+# Write a Python program to get the volume of a sphere with radius six.
+
+# --------------------------------------
+
+def exercise_15_slaccer():
+    import math
+    r = 6
+    vol_sphere = (4/3) * math.pi * r ** 3
+    print("The volume of the spere = ", vol_sphere)
+    
+# --------------------------------------
+# 16. Difference from 17
+# Write a Python program to calculate the difference between a given number and 17. If the number is greater than 17, return twice the absolute difference.
+# --------------------------------------
+def exercise_16_slaccer():
+    n = int(input("Input a number: "))
+    def difference(n):
+        if n > 17 : return (n-17)*2
+        else : return abs(n-17)
+    print(difference(n))
+
+
 # --------------------------------------
 # Testing Area
 # --------------------------------------
 if __name__ == "__main__":
     print("\nOutput of the Exercise:")
-    exercise_9()
+    exercise_16_slaccer()
