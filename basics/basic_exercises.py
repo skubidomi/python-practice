@@ -192,7 +192,65 @@ def exercise_9_slaccer():
     print(f"The examination will start from: {exam_st_date[0]} / {exam_st_date[1]} / {exam_st_date[2]}")
 
 # --------------------------------------
+# 10. Number Expansion Calculator
+# Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+# --------------------------------------
+def exercise_10_slaccer():
+    integer_n = input("Input an integer (n): ")
+    n1 = int(integer_n)
+    n2 = int(integer_n + integer_n)
+    n3 = int(integer_n + integer_n + integer_n)
+    result = n1 + n2 + n3
+    
+    print(f"Result of n+nn+nnn is : {result}")
 
+# --------------------------------------
+# 11. Function Documentation Printer
+# Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+# --------------------------------------
+def exercise_11_slaccer():
+    print("\nDefinition of 'any' built in function:\n")
+    print(any.__doc__)
+
+    def show_doc(func):
+        print(func.__doc__)
+    show_doc(anext)
+
+    for func in [__builtins__]:
+        print(f"--- {func.__name__} ---")
+        print(func.__doc__)
+        print()
+
+# --------------------------------------
+# 11. Monthly Calendar display
+# Write a Python program that prints the calendar for a given month and year.
+# --------------------------------------
+def exercise_12_slaccer():
+    import calendar
+    month = int(input("Input a month with numbers: "))
+    year = int(input("Input a year with numbers: "))
+    
+    print(calendar.month(year, month))
+
+# --------------------------------------
+# 12. Multi-line Here Document
+# Write a Python program to print the following 'here document'.
+# Sample string :
+# a string that you "don't" have to escape
+# This
+# is a ....... multi-line
+# heredoc string --------> example
+# --------------------------------------
+def exercise_13_slaccer():
+    heredoc = '''a string that you "don't" have to escape
+    This
+    is a ....... multi-line 
+    heredoc string --------> example'''
+    
+    print(heredoc)
+
+
+# --------------------------------------
 def exercise_15_slaccer():
     import math
     r = 6
@@ -217,4 +275,4 @@ def exercise_16_slaccer():
 # --------------------------------------
 if __name__ == "__main__":
     print("\nOutput of the Exercise:")
-    exercise_9_slaccer()
+    exercise_13_slaccer()
